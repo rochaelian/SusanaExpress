@@ -11,11 +11,10 @@ namespace Susana.Entity
     {
         private int idCliente;
         private string nombre;
-        [Display(Name = "Apelido Materno")]
-        private string apmaterno;
+      //  [Display(Name = "Apelido Materno")]
+        private string apUno;
 
-        private string appaterno;
-        private string dni;
+        private string apDos;
         private string direccion;
         private string telefono;
         private List<Venta> ventas;
@@ -32,8 +31,8 @@ namespace Susana.Entity
                 estado = value;
             }
         }
-        [Display(Name = "Codigo")]
-        public long IdCliente
+  //      [Display(Name = "Codigo")]
+        public int IdCliente
         {
             get
             {
@@ -45,8 +44,8 @@ namespace Susana.Entity
                 idCliente = value;
             }
         }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "Nombre")]
+    //    [Required(ErrorMessage = "Este Campo es Requerido")]
+     //   [Display(Name = "Nombre")]
         public string Nombre
         {
             get
@@ -59,50 +58,36 @@ namespace Susana.Entity
                 nombre = value;
             }
         }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "Apelido Materno")]
-        public string Apmaterno
+    //    [Required(ErrorMessage = "Este Campo es Requerido")]
+    //    [Display(Name = "Apelido Materno")]
+        public string ApUno
         {
             get
             {
-                return apmaterno;
+                return apUno;
             }
 
             set
             {
-                apmaterno = value;
+                apUno = value;
             }
         }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "Aoellido Paterno")]
-        public string Appaterno
+       // [Required(ErrorMessage = "Este Campo es Requerido")]
+       // [Display(Name = "Aoellido Paterno")]
+        public string ApDos
         {
             get
             {
-                return appaterno;
+                return apDos;
             }
 
             set
             {
-                appaterno = value;
+                apDos = value;
             }
         }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "DNI")]
-        public string Dni
-        {
-            get
-            {
-                return dni;
-            }
 
-            set
-            {
-                dni = value;
-            }
-        }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "Dirección")]
+        //[Display(Name = "Dirección")]
         public string Direccion
         {
             get
@@ -115,8 +100,8 @@ namespace Susana.Entity
                 direccion = value;
             }
         }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "Telefóno")]
+        //[Required(ErrorMessage = "Este Campo es Requerido")]
+        //[Display(Name = "Telefóno")]
         public string Telefono
         {
             get
@@ -129,7 +114,7 @@ namespace Susana.Entity
                 telefono = value;
             }
         }
-        [Required(ErrorMessage = "Este Campo es Requerido")]
+        //[Required(ErrorMessage = "Este Campo es Requerido")]
         public List<Venta> Ventas
         {
             get
@@ -152,16 +137,15 @@ namespace Susana.Entity
             this.idCliente = idCliente;
         }
 
-        public Cliente(int idCliente, string nombre, string apmaterno, string appaterno, string dni, string direccion, string telefono)
+        public Cliente(int idCliente, string nombre, string apuno, string apdos, string direccion, string telefono)
         {
             this.idCliente = idCliente;
             this.Nombre = nombre;
-            this.Apmaterno = apmaterno;
-            this.Appaterno = appaterno;
-            this.Dni = dni;
+            this.apUno = apuno;
+            this.apDos = apdos;
             this.Direccion = direccion;
             this.Telefono = telefono;
-        }
+        } 
 
     }
 }

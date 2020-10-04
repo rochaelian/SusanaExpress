@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\WebSusanaMvc\\WebSusanaMvc.csproj": {}
+  },
+  "projects": {
+    "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Dao\\Susana.Dao.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Dao\\Susana.Dao.csproj",
+        "projectName": "Susana.Dao",
+        "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Dao\\Susana.Dao.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj": {
+                "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj",
+        "projectName": "Susana.Entity",
+        "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.neg\\Susana.neg.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.neg\\Susana.neg.csproj",
+        "projectName": "Susana.neg",
+        "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.neg\\Susana.neg.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Dao\\Susana.Dao.csproj": {
+                "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Dao\\Susana.Dao.csproj"
+              },
+              "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj": {
+                "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\WebSusanaMvc\\WebSusanaMvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\WebSusanaMvc\\WebSusanaMvc.csproj",
+        "projectName": "WebSusanaMvc",
+        "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\WebSusanaMvc\\WebSusanaMvc.csproj",
+        "packagesPath": "C:\\Users\\Elian\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\WebSusanaMvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Elian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj": {
+                "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.Entity\\Susana.Entity.csproj"
+              },
+              "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.neg\\Susana.neg.csproj": {
+                "projectPath": "D:\\Users\\Elian\\Desktop\\Proyecto Componentes\\SusanaExpress\\Susana.neg\\Susana.neg.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AWS.Logger.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.5.1.22, )"
+            },
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.5.0.24, )"
+            },
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.3.101, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.5.0.24, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
